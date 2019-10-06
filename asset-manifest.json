@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/ton-fift-codes/static/css/main.196dc63c.chunk.css",
-    "main.js": "/ton-fift-codes/static/js/main.634cabc6.chunk.js",
-    "main.js.map": "/ton-fift-codes/static/js/main.634cabc6.chunk.js.map",
+    "main.css": "/ton-fift-codes/static/css/main.4bfc5642.chunk.css",
+    "main.js": "/ton-fift-codes/static/js/main.56e45499.chunk.js",
+    "main.js.map": "/ton-fift-codes/static/js/main.56e45499.chunk.js.map",
     "runtime-main.js": "/ton-fift-codes/static/js/runtime-main.359bd209.js",
     "runtime-main.js.map": "/ton-fift-codes/static/js/runtime-main.359bd209.js.map",
-    "static/css/2.22137b4b.chunk.css": "/ton-fift-codes/static/css/2.22137b4b.chunk.css",
-    "static/js/2.1d54148c.chunk.js": "/ton-fift-codes/static/js/2.1d54148c.chunk.js",
-    "static/js/2.1d54148c.chunk.js.map": "/ton-fift-codes/static/js/2.1d54148c.chunk.js.map",
+    "static/css/2.39d66c3d.chunk.css": "/ton-fift-codes/static/css/2.39d66c3d.chunk.css",
+    "static/js/2.dcfb412a.chunk.js": "/ton-fift-codes/static/js/2.dcfb412a.chunk.js",
+    "static/js/2.dcfb412a.chunk.js.map": "/ton-fift-codes/static/js/2.dcfb412a.chunk.js.map",
     "index.html": "/ton-fift-codes/index.html",
-    "precache-manifest.48759e2bfad88c5131240fc1b6213f27.js": "/ton-fift-codes/precache-manifest.48759e2bfad88c5131240fc1b6213f27.js",
+    "precache-manifest.4b3d09dc3d9183e412009d66f7be7c69.js": "/ton-fift-codes/precache-manifest.4b3d09dc3d9183e412009d66f7be7c69.js",
     "service-worker.js": "/ton-fift-codes/service-worker.js",
-    "static/css/2.22137b4b.chunk.css.map": "/ton-fift-codes/static/css/2.22137b4b.chunk.css.map",
-    "static/css/main.196dc63c.chunk.css.map": "/ton-fift-codes/static/css/main.196dc63c.chunk.css.map"
+    "static/css/2.39d66c3d.chunk.css.map": "/ton-fift-codes/static/css/2.39d66c3d.chunk.css.map",
+    "static/css/main.4bfc5642.chunk.css.map": "/ton-fift-codes/static/css/main.4bfc5642.chunk.css.map",
+    "static/media/App.css": "/ton-fift-codes/static/media/glyphicons-halflings-regular.fa277232.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.359bd209.js",
-    "static/css/2.22137b4b.chunk.css",
-    "static/js/2.1d54148c.chunk.js",
-    "static/css/main.196dc63c.chunk.css",
-    "static/js/main.634cabc6.chunk.js"
+    "static/css/2.39d66c3d.chunk.css",
+    "static/js/2.dcfb412a.chunk.js",
+    "static/css/main.4bfc5642.chunk.css",
+    "static/js/main.56e45499.chunk.js"
   ]
 }
