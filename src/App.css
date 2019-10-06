@@ -1,22 +1,26 @@
+@import "~react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background: white;
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  h1 {
+    font-size: calc(16px + 2vmin);
+  }
+  margin: 1em 0;
 }
 
-.App-link {
-  color: #09d3ac;
+.spreadsheet {
+  margin: 1em;
+}
+
+.fit {
+  width: auto;
 }
