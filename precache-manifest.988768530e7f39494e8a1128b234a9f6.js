@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "49b0df998607f96266fb4c973bfbc2fa",
+    "revision": "cec4434466cefdbeea67f518848d62bf",
     "url": "/ton-fift-codes/index.html"
   },
   {
-    "revision": "38bd361b2245d367fdc9",
+    "revision": "21b176fbe75a54d25ec9",
     "url": "/ton-fift-codes/static/css/2.39d66c3d.chunk.css"
   },
   {
-    "revision": "6698dcbbcdaf6a976d6b",
+    "revision": "c647d3f8d9b40168958d",
     "url": "/ton-fift-codes/static/css/main.4bfc5642.chunk.css"
   },
   {
-    "revision": "38bd361b2245d367fdc9",
-    "url": "/ton-fift-codes/static/js/2.dcfb412a.chunk.js"
+    "revision": "21b176fbe75a54d25ec9",
+    "url": "/ton-fift-codes/static/js/2.e3a99f53.chunk.js"
   },
   {
-    "revision": "6698dcbbcdaf6a976d6b",
-    "url": "/ton-fift-codes/static/js/main.81529121.chunk.js"
+    "revision": "c647d3f8d9b40168958d",
+    "url": "/ton-fift-codes/static/js/main.345b5cc5.chunk.js"
   },
   {
     "revision": "d01ef853eb03b5b19019",
