@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dcb006e3e48bc6bbc7c9bafd505c606b",
+    "revision": "49b0df998607f96266fb4c973bfbc2fa",
     "url": "/ton-fift-codes/index.html"
   },
   {
