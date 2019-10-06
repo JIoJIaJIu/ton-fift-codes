@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ton-fift-codes/static/css/main.196dc63c.chunk.css",
+    "main.js": "/ton-fift-codes/static/js/main.634cabc6.chunk.js",
+    "main.js.map": "/ton-fift-codes/static/js/main.634cabc6.chunk.js.map",
+    "runtime-main.js": "/ton-fift-codes/static/js/runtime-main.359bd209.js",
+    "runtime-main.js.map": "/ton-fift-codes/static/js/runtime-main.359bd209.js.map",
+    "static/css/2.22137b4b.chunk.css": "/ton-fift-codes/static/css/2.22137b4b.chunk.css",
+    "static/js/2.1d54148c.chunk.js": "/ton-fift-codes/static/js/2.1d54148c.chunk.js",
+    "static/js/2.1d54148c.chunk.js.map": "/ton-fift-codes/static/js/2.1d54148c.chunk.js.map",
+    "index.html": "/ton-fift-codes/index.html",
+    "precache-manifest.48759e2bfad88c5131240fc1b6213f27.js": "/ton-fift-codes/precache-manifest.48759e2bfad88c5131240fc1b6213f27.js",
+    "service-worker.js": "/ton-fift-codes/service-worker.js",
+    "static/css/2.22137b4b.chunk.css.map": "/ton-fift-codes/static/css/2.22137b4b.chunk.css.map",
+    "static/css/main.196dc63c.chunk.css.map": "/ton-fift-codes/static/css/main.196dc63c.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.359bd209.js",
+    "static/css/2.22137b4b.chunk.css",
+    "static/js/2.1d54148c.chunk.js",
+    "static/css/main.196dc63c.chunk.css",
+    "static/js/main.634cabc6.chunk.js"
+  ]
+}
