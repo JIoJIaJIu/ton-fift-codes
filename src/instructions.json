@@ -1,0 +1,86 @@
+[
+    {
+        "asm": "CTOS",
+        "code": null,
+        "alias": null,
+        "stack": null,
+        "desc": "Cell to Slice"
+    },
+    {
+        "asm": "DUP",
+        "code": null,
+        "alias": "PUSH s0",
+        "stack": null,
+        "desc": null
+    },
+    {
+        "asm": "NIP",
+        "code": "0x31",
+        "alias": "POP s1",
+        "stack": null,
+        "desc": null
+    },
+    {
+        "asm": "INC",
+        "code": null,
+        "alias": "ADDCONST 1",
+        "stack": null,
+        "desc": null
+    },
+    {
+        "asm": "INT",
+        "code": null,
+        "alias": null,
+        "stack": "(b x - b')",
+        "desc": null
+    },
+    {
+        "asm": "LDSLICEX",
+        "code": null,
+        "alias": null,
+        "stack": "(s l - s′′s′)",
+        "desc": "loads the first 0 ≤ l ≤ 1023 bits from Slices into a separate Slice s′′, returning the remainder of s a s`"
+    },
+    {
+        "asm": "STU cc+1",
+        "code": "0xCB cc",
+        "alias": null,
+        "stack": "(x b - b′)",
+        "desc": "stores an unsigned cc+1-bit integer x into Builder b`"
+    },
+    {
+        "asm": "LDU cc+1",
+        "code": "0xD3 cc",
+        "alias": null,
+        "stack": "(s - x s′)",
+        "desc": "loads an unsigned cc+1-bit integer x from Slices"
+    },
+    {
+        "asm": "PLDU cc+1",
+        "code": "0xD70B cc",
+        "alias": null,
+        "stack": "(s - x)",
+        "desc": "preloads an unsigned cc+1-bit integer froms"
+    },
+    {
+        "asm": "SETCODE",
+        "code": "0xFB04",
+        "alias": null,
+        "stack": "(c - )",
+        "desc": "creates an output action that would change this smart contract code to that given by Cell c"
+    },
+    {
+        "asm": "boc+>B",
+        "code": null,
+        "alias": null,
+        "stack": "(c x - B)",
+        "desc": "creates and serializes a “standard” bag of cells, containing one root Cell c along with all its descendants.  An Integer parameter 0≤x≤31 is used to pass flags indicating the additional options for bag-of-cells serialization"
+    },
+    {
+        "asm": "boc>B",
+        "code": null,
+        "alias": "0 boc+>B",
+        "stack": "(c - B)",
+        "desc": "serializes a small “standard” bag of cells with root Cell c and all its descendants"
+    }
+]

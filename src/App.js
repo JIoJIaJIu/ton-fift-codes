@@ -3,12 +3,12 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import filterFactory, { textFilter } from 'react-bootstrap-table2-filter';
 
 import './App.css';
-import instructions from './instructions';
+import instructions from './instructions.json';
 
 const columns = [
   {
     dataField: 'asm',
-    text: 'Asm',
+    text: 'Asm / Instruction',
     sort: true,
     filter: textFilter(),
   },
