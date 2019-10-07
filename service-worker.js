@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ton-fift-codes/precache-manifest.699ce00eac7f9b8fb695a06ae575f34f.js"
+  "/ton-fift-codes/precache-manifest.da390bffd7d2b1028ade90dff4d0da3f.js"
 );
 
 self.addEventListener('message', (event) => {

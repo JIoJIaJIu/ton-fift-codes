@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ton-fift-codes/static/css/main.4bfc5642.chunk.css",
-    "main.js": "/ton-fift-codes/static/js/main.c549d924.chunk.js",
-    "main.js.map": "/ton-fift-codes/static/js/main.c549d924.chunk.js.map",
+    "main.js": "/ton-fift-codes/static/js/main.36b3e464.chunk.js",
+    "main.js.map": "/ton-fift-codes/static/js/main.36b3e464.chunk.js.map",
     "runtime-main.js": "/ton-fift-codes/static/js/runtime-main.359bd209.js",
     "runtime-main.js.map": "/ton-fift-codes/static/js/runtime-main.359bd209.js.map",
     "static/css/2.39d66c3d.chunk.css": "/ton-fift-codes/static/css/2.39d66c3d.chunk.css",
     "static/js/2.e3a99f53.chunk.js": "/ton-fift-codes/static/js/2.e3a99f53.chunk.js",
     "static/js/2.e3a99f53.chunk.js.map": "/ton-fift-codes/static/js/2.e3a99f53.chunk.js.map",
     "index.html": "/ton-fift-codes/index.html",
-    "precache-manifest.699ce00eac7f9b8fb695a06ae575f34f.js": "/ton-fift-codes/precache-manifest.699ce00eac7f9b8fb695a06ae575f34f.js",
+    "precache-manifest.da390bffd7d2b1028ade90dff4d0da3f.js": "/ton-fift-codes/precache-manifest.da390bffd7d2b1028ade90dff4d0da3f.js",
     "service-worker.js": "/ton-fift-codes/service-worker.js",
     "static/css/2.39d66c3d.chunk.css.map": "/ton-fift-codes/static/css/2.39d66c3d.chunk.css.map",
     "static/css/main.4bfc5642.chunk.css.map": "/ton-fift-codes/static/css/main.4bfc5642.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.39d66c3d.chunk.css",
     "static/js/2.e3a99f53.chunk.js",
     "static/css/main.4bfc5642.chunk.css",
-    "static/js/main.c549d924.chunk.js"
+    "static/js/main.36b3e464.chunk.js"
   ]
 }
