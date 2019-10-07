@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cec4434466cefdbeea67f518848d62bf",
+    "revision": "4152d123bd45f9096aa5ec35044d0979",
     "url": "/ton-fift-codes/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ton-fift-codes/static/css/2.39d66c3d.chunk.css"
   },
   {
-    "revision": "c647d3f8d9b40168958d",
+    "revision": "6efb78ee7262c9fc258c",
     "url": "/ton-fift-codes/static/css/main.4bfc5642.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ton-fift-codes/static/js/2.e3a99f53.chunk.js"
   },
   {
-    "revision": "c647d3f8d9b40168958d",
-    "url": "/ton-fift-codes/static/js/main.345b5cc5.chunk.js"
+    "revision": "6efb78ee7262c9fc258c",
+    "url": "/ton-fift-codes/static/js/main.c549d924.chunk.js"
   },
   {
     "revision": "d01ef853eb03b5b19019",
