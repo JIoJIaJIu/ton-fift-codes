@@ -82,5 +82,222 @@
         "alias": "0 boc+>B",
         "stack": "(c - B)",
         "desc": "serializes a small “standard” bag of cells with root Cell c and all its descendants"
+    },
+    {
+        "asm": "LDSLICE cc+1",
+        "code": "0xD6 cc",
+        "alias": null,
+        "stack": "(s - s′′s′)",
+        "desc": "cuts the next cc+1 bits of s into a separate Slice s′′"
+    },
+    {
+        "asm": "LDUX",
+        "code": "0xD701",
+        "alias": null,
+        "stack": "(s l - x s′)",
+        "desc": "loads an unsigned l-bit integer x from (the first l bits of) s, with 0≤l≤256"
+    },
+    {
+        "asm": "u,",
+        "code": null,
+        "alias": null,
+        "stack": "(b x y - b′)",
+        "desc": "appends the big-endian binary representation of an unsigned y-bit integer x to Builder b, where 0≤y≤256.  If the operation is impossible, an exception is thrown"
+    },
+    {
+        "asm": "ed25519_sign",
+        "code": null,
+        "alias": null,
+        "stack": "(B B′ - B′′)",
+        "desc": "signs data B with the Ed25519 private key B′(a 32-byte Bytes value) and returns the signature as a 64-byte Bytes value B′′"
+    },
+    {
+        "asm": "ed25519_sign_uint",
+        "code": null,
+        "alias": "swap 256 u>B swap ed25519_sign",
+        "stack": "(x B′ - B′′)",
+        "desc": "converts a big-endian unsigned 256-bit integer x into a 32-byte sequence and signs it using the Ed25519 private key B′ similarly to ed25519_sign"
+    },
+    {
+        "asm": "EQUAL",
+        "code": "0xBA",
+        "alias": null,
+        "stack": "(x y - x=y)",
+        "desc": "returns -1 if x=y, 0 otherwise"
+    },
+    {
+        "asm": "runvmcode",
+        "code": null,
+        "alias": null,
+        "stack": "(...s - ...x)",
+        "desc": "invokes a new instance of TVM with the current continuation cc initialized from Slice s. The original Fift stack (without s) is passed in its entirety asthe initial stack of TVM"
+    },
+    {
+        "asm": "runvmdict",
+        "code": null,
+        "alias": null,
+        "stack": "(...s - ...x)",
+        "desc": "invokes a new instance of TVM with the current continuation cc initialized from Slice s similarly to runvmcode, but also initializes the special registerc3 with the same value, and pushes a zero into the initial TVM stack before the TVM execution begins"
+    },
+    {
+        "asm": "runvm",
+        "code": null,
+        "alias": null,
+        "stack": "(...s c - ...x c′)",
+        "desc": "invokes a new instance of TVM with both the current continuation cc and the special register c3 initialized from Slice s, and pushes a zero into the initial TVM stack similarly to runvmdict, but also initializes special register c4(the “root of persistent data”) with Cell c"
+    },
+    {
+        "asm": "RET",
+        "code": "0xDB30",
+        "alias": "PUSH c0; JMPX",
+        "stack": "(...s c - ...x c′)",
+        "desc": "return s to the continuation at c0 (i.e., performs cc←c0).  The remainder of the current continuation cc is discarded"
+    },
+    {
+        "asm": "NEWDICT",
+        "code": "0x6D",
+        "alias": "PUSHNULL",
+        "stack": "( - D)",
+        "desc": "returns a new empty dictionary"
+    },
+    {
+        "asm": "dictnew",
+        "code": null,
+        "alias": "b{0}",
+        "stack": "( - s)",
+        "desc": "pushes a Slice that represents a new empty dictionary"
+    },
+    {
+        "asm": "b{〈binary-data〉}",
+        "code": null,
+        "alias": null,
+        "stack": "( - s)",
+        "desc": "creates a Slice s that contains no references and up to 1023 data bits specified in〈binary-data〉, which must be a string consisting only of the characters ‘0’ and ‘1’,"
+    },
+    {
+        "asm": "DICTSET",
+        "code": "0xF412",
+        "alias": null,
+        "stack": "(x k D n - D′)",
+        "desc": "sets the value associated with n-bit key k(represented by a Slice as in DICTGET) in dictionary D(also represented by a Slice) to value x(again a Slice), and returns the resulting dictionary as D′."
+    },
+    {
+        "asm": "DICTISET",
+        "code": "0xF414",
+        "alias": null,
+        "stack": "(x i D n - D′)",
+        "desc": "similar to DICTSET, but with the key represented by a (big-endian) signed n-bit integer i. If i does not fit into n bits, a range check exception is generated"
+    },
+    {
+        "asm": "DICTSETREF",
+        "code": "0xF413",
+        "alias": null,
+        "stack": "(c k D n - D′)",
+        "desc": "similar to DICTSET, but with the value set to a reference to Cell c"
+    },
+    {
+        "asm": "DICTISETREF",
+        "code": "0xF413",
+        "alias": null,
+        "stack": "(c i D n - D′)",
+        "desc": "similar to DICTSETREF, but with the key a signed n-bit integer as in DICTISET"
+    },
+    {
+        "asm": "LDDICT",
+        "code": "0xF404",
+        "alias": "LDOPTREF",
+        "stack": "(s - D s′),",
+        "desc": "loads (parses) a dictionary D fromSlice s, and returns the remainder of s as s′. May be applied to dictionaries or to values of arbitrary (ˆY)? types"
+    },
+    {
+        "asm": "STDICT",
+        "code": "0xF400",
+        "alias": "STOPTREF",
+        "stack": "(D b - b′)",
+        "desc": "stores dictionary D into Builder b, returing the resulting Builder b′"
+    },
+    {
+        "asm": "DICTGET",
+        "code": "0xF40A",
+        "alias": null,
+        "stack": "(k D n - x - 1 or 0)",
+        "desc": "looks up key k (represented by a Slice, the first 0≤n≤1023 data bits of which are used as a key) in dictionary D of type HashmapE(n, X) with n-bit keys. On success, returns the value found as a Slice x"
+    },
+    {
+        "asm": "DICTGETREF",
+        "code": "0xF40B",
+        "alias": null,
+        "stack": "(k D n - c - 1 or 0)",
+        "desc": "similar to DICTGET, but with a LDREF;ENDS applied to x on success. This operation is useful for dictionaries of type HashmapE(n,ˆY)"
+    },
+    {
+        "asm": "DICTIGETOPTREF",
+        "code": "0xF46A",
+        "alias": null,
+        "stack": "(i D n - c?)",
+        "desc": "similar to DICTGETOPTREF, but with the key given by signed n-bit Integer i. If the key i is out of range, also returns Null"
+    },
+    {
+        "asm": "PUSHINT x",
+        "code": "0x7i",
+        "alias": null,
+        "stack": "(k D n - x - 1 or 0)",
+        "desc": "with −5≤x≤10, pushes integer x into the stack; here i equals four lower-order bits of x(i.e., i = x mod 16)"
+    },
+    {
+        "asm": "PUSHINT xx",
+        "code": "0x80xx",
+        "alias": null,
+        "stack": "(k D n - x - 1 or 0)",
+        "desc": "with −128≤xx≤127"
+    },
+    {
+        "asm": "OVER",
+        "code": "0x21",
+        "alias": "PUSH s1",
+        "stack": null,
+        "desc": "pushes a copy of the old s(1) into the stack"
+    },
+    {
+        "asm": "LDREF",
+        "code": "0xD4",
+        "alias": null,
+        "stack": "(s - c s′)",
+        "desc": "loads a cell reference c from s"
+    },
+    {
+        "asm": "PLDREF",
+        "code": "0xD74C",
+        "alias": "LDREF DROP",
+        "stack": "(s - c)",
+        "desc": "preloads the first cell reference of a Slice"
+    },
+    {
+        "asm": "PLDDICT",
+        "code": "0xF405",
+        "alias": "LDDICT DROP",
+        "stack": "(s - D)",
+        "desc": "preloads a dictionary D from Slice s"
+    },
+    {
+        "asm": "TUPLE n",
+        "code": "0x6F0n",
+        "alias": "LDDICT DROP",
+        "stack": "(x_1...x_n - t),",
+        "desc": "creates a new Tuple t=(x_1,...,x_n) containing n values x_1, . . . ,x_n, where 0≤n≤15"
+    },
+    {
+        "asm": "u>B",
+        "code": null,
+        "alias": "i>B",
+        "stack": "(x y - B)",
+        "desc": "stores an unsigned big-endian y-bit Integer x into a Bytes value B consisting of exactly y/8 bytes"
+    },
+    {
+        "asm": "B>file",
+        "code": null,
+        "alias": null,
+        "stack": "(B S - )",
+        "desc": "creates a new (binary) file with the name specified in String S and writes data from Bytes B into the new file. If the specified file already exists, it is overwritten."
     }
 ]
