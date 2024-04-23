@@ -5,7 +5,7 @@
   "homepage": "https://jiojiajiu.github.io/ton-fift-codes",
   "dependencies": {
     "bootstrap": "^3.4.1",
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^5.0.0",
     "react": "^16.10.2",
     "react-bootstrap-table-next": "^3.2.1",
     "react-bootstrap-table2-filter": "^1.2.0",
